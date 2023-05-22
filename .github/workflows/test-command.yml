@@ -53,6 +53,8 @@ jobs:
 
       - name: Ping Test
         uses: ./.github/actions/ping
+        with:
+          token: ${{ secrets.PAT }}
 
   # Run the E2E tests
   e2e:
